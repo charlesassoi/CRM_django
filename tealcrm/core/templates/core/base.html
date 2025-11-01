@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="py-4 flex justify-between bg-teal-500">
+      <a href="/">teal crm</a>
+      <div>
+        <a href="{% url 'about' %}" class="text-white">about </a>
+        <a href="/" class="py-4 px-6 bg-teal-500 rounded-xl text-white">login in </a>
+        <a href="/" class="py-4 px-6 bg-teal-500 rounded-xl text-white"> sign up </a>
+      </div>
+    </nav>
+
+    {%block content%}
+    {% endblock %}
+    <footer class="py-8 text-center bg-gray-200" >
+      <p class="text-xs">copyright (c) 2025 tealcrm</p>
+
+    </footer>
+  </body>
+</html>
